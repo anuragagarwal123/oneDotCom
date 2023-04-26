@@ -1,5 +1,6 @@
 const controller = require("./../controllers/user.controller");
 const router = require("express").Router();
+// TODO pass the checkrole middleware before calling the business logic
 
 // CRUD Routes /users
 router.get("/", controller.getUsers); // /users

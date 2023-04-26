@@ -37,6 +37,9 @@ exports.createUser = async (req, res, next) => {
     const lastName = req.body.last_name;
     const email = req.body.email;
     const password = req.body.password;
+
+    // TODO commenting due to my system error not able to use bcrypt library in mac
+
     //const salt = await bcrypt.genSalt(10);
     // const password = await bcrypt.hash(req.body.password, salt);
     const role =  req.body.role;
